@@ -34,8 +34,8 @@ class PotholeDatabase {
     final dbPath = await getDatabasesPath();
     final path = join(dbPath, dbName);
 
-    FTPConnect ftpConnect = FTPConnect('ftp.drivehq.com',
-        user: 'anthony.scerri.20@um.edu.mt', pass: '231273Asd');
+    FTPConnect ftpConnect =
+        FTPConnect('ftp.drivehq.com', user: '******', pass: '*******');
 
     File fileToUpload = File(path);
     await ftpConnect.connect();
@@ -65,8 +65,8 @@ class PotholeDatabase {
     var client = new SSHClient(
       host: "192.168.1.230",
       port: 22,
-      username: "sftpmr",
-      passwordOrKey: "MaltaMalta123",
+      username: "****",
+      passwordOrKey: "****",
     );
     await client.connect();
     await client.connectSFTP();
